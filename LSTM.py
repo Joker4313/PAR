@@ -129,7 +129,7 @@ pred_y_for_test = pred_y_for_test.view(-1, OUTPUT_FEATURES_NUM).data.numpy()
 
 loss = criterion(torch.from_numpy(pred_y_for_test), torch.from_numpy(test_y))
 print("test loss：", loss.item())
-
+# 画图部分，暂时不用
 """# ----------------- plot -------------------
 plt.figure()
 plt.plot(t_for_training, train_y, 'b', label='y_trn')
